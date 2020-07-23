@@ -1,0 +1,41 @@
+module.exports = {
+  up: (queryInterface, Sequelize) => queryInterface.bulkInsert('paciente',
+  [
+    {
+      nome: 'Jéssica Macedo',
+      data_nascimento: null,
+      sexo: 'F',
+      telefone1: null,
+      telefone2: null,
+      diagnostico: null,
+      cep: null,
+      rua: null,
+      numero: null,
+      complemento: null,
+      bairro: null,
+      cidade: null,
+      estado: null,
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    {
+      nome: 'Lucas Magalhães',
+      data_nascimento: null,
+      sexo: 'M',
+      telefone1: '62991048282',
+      telefone2: null,
+      diagnostico: null,
+      cep: null,
+      rua: null,
+      numero: null,
+      complemento: null,
+      bairro: null,
+      cidade: null,
+      estado: null,
+      created_at: new Date(),
+      updated_at: new Date(),
+    }
+  ], {}),
+
+  down: (queryInterface) => queryInterface.bulkDelete('paciente', null, {}),
+};

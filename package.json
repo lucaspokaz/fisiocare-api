@@ -1,0 +1,46 @@
+{
+  "name": "fisiocare-api",
+  "version": "1.0.1",
+  "description": "FisioCare API",
+  "main": "App.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^6.1.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.0",
+    "jwt-simple": "^0.5.6",
+    "left-pad": "^1.3.0",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.3.0",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.10",
+    "sequelize": "^5.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^5.5.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js",
+    "build": "webpack --mode production",
+    "prod": "node build/fisiocare-api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/cartplace/cartplace-backend.git"
+  },
+  "homepage": "https://bitbucket.org/cartplace/cartplace-backend#readme"
+}
